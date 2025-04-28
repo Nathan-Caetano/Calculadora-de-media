@@ -67,12 +67,13 @@ form button {
     justify-content: space-between;
 }
 
-.form-bottom p {
+#media {
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
-    width: 100%;
-    max-width: 100px;
+    font-size: 1.2rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 #ajuda-btn {
