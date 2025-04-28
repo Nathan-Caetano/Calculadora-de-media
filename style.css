@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6557AF;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #9D8CFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px 60px 40px;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+form h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form input:focus {
+    outline: 0;
+}
+
+form button {
+    background-color: #4C4184;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form-bottom{
+    width: 100%;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-bottom p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    max-width: 100px;
+}
+
+#ajuda-btn {
+    background-color: #4C4184;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #000;
+    transition: ease-in-out 0.2s;
+}
+
+#ajuda-btn:hover{
+    transform: translateY(-7px);
+    box-shadow: 5px 5px 20px #000;
+}
+
+#ajuda-btn:active{
+    background-color: #b09fff;
+    color: #000;
+    transform: translateY(-1px);
+    box-shadow: 0 0 0;
+}
+
+#ajuda {
+    position: absolute;
+    background-color: #b09fff;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 5px 5px 30px #000;
+}
+
+#ajuda-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#ajuda-top button{
+    background: none;
+    border: 0;
+    font-size: 30px;
+}
+
+#ajuda-content{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#ajuda-content p{
+    margin-bottom: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.console-log {
+    border: 2px solid red;
+}

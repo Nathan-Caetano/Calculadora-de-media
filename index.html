@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <h1>Calculadora média aritimética</h1>
+            <input type="text" name="numeros" id="numeros">
+            <div class="form-bottom">
+                <button type="button" onclick="calcMedia()">Calcular</button> 
+                <p id="media"></p>
+            </div>
+        </form>
+    </div>
+    <div id="ajuda" class="container hide">
+        <div id="ajuda-top">
+            <h1>Como usar</h1>
+            <button id="fechar-ajuda" onclick="mostrarAjuda()">X</button>
+        </div>
+
+        <div id="ajuda-content">
+            <p>Você pode adicionar quantos número quizer, desde que separe eles utilizando uma ",". <br><b>Exemplo: 1,2,3</b></p>
+            <p>Se for adicionar algum numero com casas decimais, deve-se utilizar o "." ao invés da ",". <br><b>Exemplo: 1,5 fica 1.5</b></p>
+        </div>
+    </div>
+    <button id="ajuda-btn" onclick="mostrarAjuda()">?</button>
+    <script src="/script.js"></script>
+</body>
+</html>
